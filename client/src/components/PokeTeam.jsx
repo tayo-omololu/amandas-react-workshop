@@ -1,11 +1,14 @@
+import React from "react"
+import PokeTeamSlot from "./PokeTeamSlot"
+
+
 //TODO
-/*
+var PokeTeam = (props) => (
 <div id="pokeTeam">
-  PokemonTeamSlot
-  PokemonTeamSlot
-  PokemonTeamSlot
-  PokemonTeamSlot
-  PokemonTeamSlot
-  PokemonTeamSlot
+  {props.pokes.map((poke, idx) => 
+  <PokeTeamSlot poke={poke} key={idx} idx={idx} fetchPokemon={props.fetchPokemon}/>
+  )}
 </div>
-*/
+);
+
+export default PokeTeam
